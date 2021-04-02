@@ -12,7 +12,7 @@ library(rela)
 base <- paf(as.matrix(x), eigcrit=1, convcrit=.001)
 KMO <- paste('Kaiser-Meyer-Olkin Measure of Sampling Adequacy =', round(as.numeric(base[5]),3))
 df <- (dim(x)[2]^2-dim(x)[2])/2
-Bartlett <-  paste('Bartlett's Test of Sphericity =', round(as.numeric(base[7]),3),
+Bartlett <-  paste('Bartlett\'s Test of Sphericity =', round(as.numeric(base[7]),3),
 ', df =', df,', Sig.p =', pchisq(as.numeric(base[7]), lower.tail=FALSE, df), sep=' ')
 KMO;Bartlett
 
